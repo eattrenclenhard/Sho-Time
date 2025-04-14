@@ -10,6 +10,8 @@ Google Drive, Google Photos and Youtube.
 This app provides an intuitive and a straightforward way for user to perform OAuth flow authorisation process to grant certain level of access to specific
 parts Google services via self-defined API client credentials to third party app such as rclone and alist etc.
 
+Rclone hardcodes redirect URI to http://localhost:53682 for Google Drive. This means that you'd always need to complete Oauth2 flow on another machine that has GUI environment. With this app, you can throw this concern out the window, you can complete your Oauth2 flow authentication of a new rclone remote remotely here, no machine GUI required. Besides that, you can customize each scope and its respective permission, providing fine-grained control over access.
+
 I built this app with privacy and data protection in mind. I have security and privacy concerns over public services who
 offer to generate tokens or refresh code. For one, I might have ended up granting broader scopes than necessary in
 public token generator when the app would work just the same by providing just enough privilege and level access. Number
